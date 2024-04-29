@@ -1,15 +1,15 @@
 import Task from './task.model.js';
 
 export const taskPost = async (req, res) => {
-    const { uid } = req.user;
-    const { nameTask, descripcion, fechaInicio, fechaCierre } = req.body;
+    const { nameTask, descripcion, fechaInicio, fechaCierre, nameCreator, lastNameCreator} = req.body;
 
     const nuevaTarea = new Task({
         nameTask,
         descripcion,
         fechaInicio,
         fechaCierre,
-        creador: uid
+        nameCreator,
+        lastNameCreator
     });
 
     await nuevaTarea.save();
@@ -21,8 +21,7 @@ export const taskPost = async (req, res) => {
 
 export const tasksGet = async (req, res) => {
     const { limite, desde } = req.query;
-    const { uid } = req.user;
-    const query = { estado: true, creador: uid };
+    const query = { estado: true};
 
     const [total, tasks] = await Promise.all([
         Task.countDocuments(query),
@@ -39,7 +38,7 @@ export const tasksGet = async (req, res) => {
 
 export const taskUpdate = async (req, res) => {
     const { id } = req.params;
-    const { _id, incompleta, estado, creador, ...resto } = req.body;
+    const { _id, estado, ...resto } = req.body;
 
     const task = await Task.findOne({ _id: id });
 

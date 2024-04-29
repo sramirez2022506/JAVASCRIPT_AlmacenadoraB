@@ -21,9 +21,12 @@ const TaskSchema = new mongoose.Schema({
         type: Boolean,
         default: true,
     },
-    creador: {
-        type: Schema.Types.ObjectId,
-        ref: 'User',
+    nameCreator: {
+        type: String,
+        required: true,
+    },
+    lastNameCreator: {
+        type: String,
         required: true,
     },
     estado: {

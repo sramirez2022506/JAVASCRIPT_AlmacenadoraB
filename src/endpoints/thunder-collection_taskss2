@@ -1,0 +1,69 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "taskss",
+    "collectionId": "bfeddc36-0c0c-4e83-be63-c6122ba163ba",
+    "dateExported": "2024-04-29T22:12:59.452Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "87ba8279-f0c8-4736-a787-d0445275980d",
+            "colId": "bfeddc36-0c0c-4e83-be63-c6122ba163ba",
+            "containerId": "",
+            "name": "postTask",
+            "url": "http://127.0.0.1:8000/almacenadora/v1/task",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-29T21:43:11.290Z",
+            "modified": "2024-04-29T21:50:06.465Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"nameTask\": \"Hacer tareas\",\r\n    \"descripcion\": \"Realizar cada tarea pendiente\",\r\n    \"fechaInicio\": \"2024-04-29\",\r\n    \"fechaCierre\": \"2024-04-30\",\r\n    \"nameCreator\": \"Juan\",\r\n    \"lastNameCreator\": \"Heernandez\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "e964c94c-4093-4833-b5eb-74d885eee55b",
+            "colId": "bfeddc36-0c0c-4e83-be63-c6122ba163ba",
+            "containerId": "",
+            "name": "getTasks",
+            "url": "http://127.0.0.1:8000/almacenadora/v1/task/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-04-29T22:10:54.574Z",
+            "modified": "2024-04-29T22:12:34.305Z",
+            "headers": []
+        },
+        {
+            "_id": "b32adb91-63c2-475c-908b-7b681fbf5c78",
+            "colId": "bfeddc36-0c0c-4e83-be63-c6122ba163ba",
+            "containerId": "",
+            "name": "putTask",
+            "url": "http://127.0.0.1:8000/almacenadora/v1/task/66301657b2dd8debfaba983d",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-04-29T22:11:45.478Z",
+            "modified": "2024-04-29T22:12:13.863Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"nameTask\": \"Hacer tareas\",\r\n    \"descripcion\": \"Realizar cada tarea pendiente\",\r\n    \"fechaInicio\": \"2024-04-29\",\r\n    \"fechaCierre\": \"2024-04-30\",\r\n    \"nameCreator\": \"Juan\",\r\n    \"lastNameCreator\": \"palma\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "baf110c3-1717-4a09-b711-874ea250cc7a",
+            "colId": "bfeddc36-0c0c-4e83-be63-c6122ba163ba",
+            "containerId": "",
+            "name": "deleteTask",
+            "url": "http://127.0.0.1:8000/almacenadora/v1/task/66301ae010ad0f609e112aa2",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-04-29T22:12:22.820Z",
+            "modified": "2024-04-29T22:12:37.789Z",
+            "headers": []
+        }
+    ],
+    "ref": "USNtPVIppGH551_NWSMec2w8R6rAgMx087UrhfZTGx2HX5O1LSPK3cUP46DxjFTC6V5XzAI6SUfVFURIrmZZNg"
+}
