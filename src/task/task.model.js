@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose, { Schema } from 'mongoose'
 
 const TaskSchema = new mongoose.Schema({
     nameTask: {
@@ -34,7 +34,7 @@ const TaskSchema = new mongoose.Schema({
 
 TaskSchema.methods.toJSON = function(){
     const { __v, _id, ...task} = this.toObject();
-    task.uid = _id;
+    task.task_ID = _id;
     return task;
 }
 

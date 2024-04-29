@@ -20,12 +20,11 @@ router.post(
         check('descripcion', 'The descripcion of the task is required').not().isEmpty(),
         check('fechaInicio', 'The dateStart of the task is required').not().isEmpty(),
         check('fechaCierre', 'The dateEnd of the task is required').not().isEmpty(),
-        check('creador', 'The creador of the task is required').not().isEmpty(),
         validarCampos
     ], taskPost
 );
 
-router.get("/", tasksGet);
+router.get("/", validarJWT, tasksGet);
 
 
 //hacer chequeo de id
@@ -45,3 +44,5 @@ router.delete(
         validarCampos
     ], taskDelete
 );
+
+export default router;

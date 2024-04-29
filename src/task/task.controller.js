@@ -1,14 +1,15 @@
 import Task from './task.model.js';
 
 export const taskPost = async (req, res) => {
-    const { nameTask, descripcion, fechaInicio, fechaCierre, creador } = req.body;
+    const { uid } = req.user;
+    const { nameTask, descripcion, fechaInicio, fechaCierre } = req.body;
 
     const nuevaTarea = new Task({
         nameTask,
         descripcion,
         fechaInicio,
         fechaCierre,
-        creador
+        creador: uid
     });
 
     await nuevaTarea.save();
@@ -70,7 +71,7 @@ export const taskDelete = async (req, res) => {
     const taskEliminada = await Task.findByIdAndUpdate(task._id, { estado: false });
 
     res.status(200).json({
-        msg: 'This PRODUCT was DELETED:',
+        msg: 'This TASK was DELETED:',
         taskEliminada,
     });
 }

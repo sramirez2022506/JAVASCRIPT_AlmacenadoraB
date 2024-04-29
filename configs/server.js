@@ -4,6 +4,7 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import apiLimiter from '../src/middlewares/validar-cant-peticiones.js';
 import authRoutes from '../src/auth/auth.routes.js';
+import taskRoutes from '../src/task/task.routes.js';
 import User from '../src/user/user.model.js'
 import { dbConnection } from './mongo.js';
 class Server {
@@ -11,6 +12,7 @@ class Server {
         this.app = express();
         this.port = process.env.PORT;
         this.authPath = '/almacenadora/v1/auth';
+        this.taskPath = '/almacenadora/v1/task';
 
         this.middlewares();
         this.conectarDB();
@@ -32,6 +34,7 @@ class Server {
 
     routes(){
         this.app.use(this.authPath, authRoutes);
+        this.app.use(this.taskPath, taskRoutes);
     }
 
     listen(){
