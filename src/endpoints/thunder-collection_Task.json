@@ -1,0 +1,89 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Task",
+    "collectionId": "3940002f-b544-4e56-b9cf-857cadfe0af0",
+    "dateExported": "2024-04-29T13:13:32.923Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "28a4bf74-0b3e-410d-ac7d-79dba9bd3c96",
+            "colId": "3940002f-b544-4e56-b9cf-857cadfe0af0",
+            "containerId": "",
+            "name": "taskPost",
+            "url": "http://127.0.0.1:8000/almacenadora/v1/task/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-29T13:00:23.406Z",
+            "modified": "2024-04-29T13:10:38.952Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJkZTZhY2ViYWU2OTJkNjgxNzNkZmIiLCJlbWFpbCI6Imx1aXNAZ21haWwuY29tIiwiaWF0IjoxNzE0Mzk1ODMwLCJleHAiOjE3MTQ0ODIyMzB9.djdHzKFfl92fBUAgtsurSNwIBV9Rdi_iIGZGqjKzfYU"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nameTask\": \"Hacer tareas\",\n  \"descripcion\": \"Realizar cada tarea pendiente\",\n  \"fechaInicio\": \"2024-04-29\",\n  \"fechaCierre\": \"2024-04-30\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "1fc350e4-2c42-4c22-bef8-bde661f07e5c",
+            "colId": "3940002f-b544-4e56-b9cf-857cadfe0af0",
+            "containerId": "",
+            "name": "tasksGet",
+            "url": "http://127.0.0.1:8000/almacenadora/v1/task/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-04-29T13:06:25.401Z",
+            "modified": "2024-04-29T13:07:52.724Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJkZTZhY2ViYWU2OTJkNjgxNzNkZmIiLCJlbWFpbCI6Imx1aXNAZ21haWwuY29tIiwiaWF0IjoxNzE0Mzk1ODMwLCJleHAiOjE3MTQ0ODIyMzB9.djdHzKFfl92fBUAgtsurSNwIBV9Rdi_iIGZGqjKzfYU"
+                }
+            ]
+        },
+        {
+            "_id": "83ff8a7f-4f67-4b80-a2a6-7e0899ac0b90",
+            "colId": "3940002f-b544-4e56-b9cf-857cadfe0af0",
+            "containerId": "",
+            "name": "taskPut",
+            "url": "http://127.0.0.1:8000/almacenadora/v1/task/662f9b389b4f5e415b918b64",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-04-29T13:08:08.682Z",
+            "modified": "2024-04-29T13:11:38.037Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJkZTZhY2ViYWU2OTJkNjgxNzNkZmIiLCJlbWFpbCI6Imx1aXNAZ21haWwuY29tIiwiaWF0IjoxNzE0Mzk1ODMwLCJleHAiOjE3MTQ0ODIyMzB9.djdHzKFfl92fBUAgtsurSNwIBV9Rdi_iIGZGqjKzfYU"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nameTask\": \"Hacer todas las tareas\",\n  \"descripcion\": \"Realizar cada tarea pendiente\",\n  \"fechaInicio\": \"2024-04-30\",\n  \"fechaCierre\": \"2024-05-02\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "4a9bffc8-fb72-40b2-b91c-a22c09c0d1a0",
+            "colId": "3940002f-b544-4e56-b9cf-857cadfe0af0",
+            "containerId": "",
+            "name": "taskDelete",
+            "url": "http://127.0.0.1:8000/almacenadora/v1/task/662f9b389b4f5e415b918b64",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-04-29T13:11:50.783Z",
+            "modified": "2024-04-29T13:12:11.252Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJkZTZhY2ViYWU2OTJkNjgxNzNkZmIiLCJlbWFpbCI6Imx1aXNAZ21haWwuY29tIiwiaWF0IjoxNzE0Mzk1ODMwLCJleHAiOjE3MTQ0ODIyMzB9.djdHzKFfl92fBUAgtsurSNwIBV9Rdi_iIGZGqjKzfYU"
+                }
+            ]
+        }
+    ],
+    "ref": "MNA0TQ6lEW9hqDPgUfHTQxoUaijHAMCCcSxd4ZRURq95XWFvrmDFvVhisovrUjRo-fyO0_esmJ6MZdOh6oFTOQ"
+}
